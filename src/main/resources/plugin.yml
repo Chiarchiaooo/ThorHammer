@@ -1,0 +1,10 @@
+name: ThorHammer
+version: '${version}'
+main: it.chiarchiaooo.thorhammer.Thorhammer
+api-version: 1.18
+authors: [ Chiarchiaooo ]
+description: The Hammer of the beloved God of Thunder
+
+commands:
+  test:
+    description: "test"
