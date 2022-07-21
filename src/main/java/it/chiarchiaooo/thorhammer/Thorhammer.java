@@ -17,6 +17,7 @@ public final class Thorhammer extends JavaPlugin {
         instance = this;
         setRadius(1.0f);
         setupEvent();
+        setupCmds();
     }
 
     public void setupEvent() {getServer().getPluginManager().registerEvents(new ClickEvent(),this);}
