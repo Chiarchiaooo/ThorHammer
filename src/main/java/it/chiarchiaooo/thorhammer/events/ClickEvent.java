@@ -2,6 +2,7 @@ package it.chiarchiaooo.thorhammer.events;
 
 import it.chiarchiaooo.thorhammer.commands.TestCmds;
 import it.chiarchiaooo.thorhammer.utils.AnimationUtils;
+import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -9,7 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import java.util.List;
+import java.util.HashMap;
 
 public class ClickEvent implements Listener {
 
@@ -19,17 +20,13 @@ public class ClickEvent implements Listener {
         Player p = e.getPlayer();
         e.setCancelled(true);
 
-        AnimationUtils animator = new AnimationUtils(p.getLocation());
-        animator.animate();
-
-        //struckEntities(p.getNearbyEntities(5,0,5));
-    }
-
-
-    private void struckEntities(List<Entity> nEntities) {
-        for (Entity en : nEntities) {
-            en.getWorld().strikeLightning(en.getLocation());
+        HashMap<Location,Entity> entities = new HashMap<>();
+        for (Entity en : p.getNearbyEntities(5,0,5)) {
+            entities.put(en.getLocation(),en);
         }
+
+        AnimationUtils animator = new AnimationUtils(p.getLocation(),entities);
+        animator.animate();
     }
 
 }

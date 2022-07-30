@@ -20,8 +20,8 @@ import java.util.List;
 public class TestCmds implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
-        ((Player)sender).getInventory().setItem(1,createHammer());
+        ItemStack im = createHammer();
+        ((Player)sender).getInventory().setItem(1,im);
         return false;
     }
 

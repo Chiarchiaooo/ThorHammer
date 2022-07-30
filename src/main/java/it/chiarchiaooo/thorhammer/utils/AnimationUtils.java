@@ -1,36 +1,41 @@
 package it.chiarchiaooo.thorhammer.utils;
 
 import it.chiarchiaooo.thorhammer.Thorhammer;
-import org.bukkit.*;
-import org.bukkit.block.Block;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.block.BlockFace;
-import org.bukkit.inventory.ItemStack;
+import org.bukkit.entity.Entity;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class AnimationUtils implements Runnable {
 
     private final Location loc;
     private float radius;
     private int taskId;
-    private int count =5;
-    private final Block bParticles;
+    private final HashMap<Location,Entity> nEntities;
 
-    public AnimationUtils(Location loc) {
+    public AnimationUtils(Location loc, HashMap<Location,Entity> nEntities) {
         this.radius = Thorhammer.getInstance().getRadius();
+        this.nEntities = nEntities;
         this.loc = loc;
-        this.bParticles =
     }
 
     public void animate() {taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(Thorhammer.getInstance(),this,0,1L);}
 
     @Override
     public void run() {
-        System.out.println(loc.getBlock().getRelative(BlockFace.DOWN).getType());
         for (int d = 0; d <= 90; d += 1) {
-            Location particleLoc = new Location(loc.getWorld(), loc.getX(), loc.getY(), loc.getZ());
+            Location particleLoc = loc;
             particleLoc.setX(loc.getX() + Math.cos(d) * radius);
             particleLoc.setZ(loc.getZ() + Math.sin(d) * radius);
-            loc.getWorld().spawnParticle(Particle.BLOCK_CRACK, particleLoc, count, );
+            loc.getWorld().spawnParticle(Particle.BLOCK_CRACK, particleLoc, 5, loc.getBlock().getRelative(BlockFace.DOWN).getType().createBlockData());
+
+            if (nEntities.containsKey(particleLoc)) nEntities.get(particleLoc).getWorld().strikeLightning(nEntities.get(particleLoc).getLocation());
         }
+
         radius += 0.4;
         if (radius > 5.0f) taskCancel();
     }
