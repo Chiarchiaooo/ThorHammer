@@ -13,7 +13,7 @@ Made for 1.13x -> 1.19x servers
 [![releaseImg]][release] ![mcversionImg] [![licenseImg]][license]
 <br><br>
 
-## Plugin still in developement
+### Plugin still in developement
 ### It's suggested to use this plugin alongside the <a href=https://www.planetminecraft.com/texture-pack/mjolnir-trident/> Mjolnir Trident Texture Pack</a> made by Timoret
 
 
