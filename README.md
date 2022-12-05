@@ -25,9 +25,9 @@ To get support open a issue on my <a href=https://github.com/Chiarchiaooo/ThorHa
 
 ## Features
 
-* ** **: _ _
+* **Thor's Wrath**: _ Shift + right click, summon the wrath of Thor in the form of a storm and cast lightnings at all creatures in the area nearby  _
 
-* **Shockwawe attack**: _ casts a showckwawe on the ground, slamming every creature in the nearby radius in the air before strucking them with a lightning_
+* **Shockwawe attack**: _ Jump and slam the hammer to the ground, creating a massive shockwawe (editable in the config), slamming every creature in the nearby radius in the air before strucking them with a lightning_
 
 * **Reloadable/Resettable config file**: _possibility to reload and reset the config without the use of plugman, /reload or manual action_
 
@@ -76,8 +76,7 @@ If you like my content and you want to support what I do, consider donating to <
 #### Thank you❤️
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U59S2LZ)
 
-<!--
+
 ## Rating
 
-You can also check out the plugin on <a href=https://www.spigotmc.org/resources/command-blocker.99602//>spigotmc.org</a><br><br> 
--->
+You can also check out the plugin on <a href=https://tinyurl.com/5c56mn7r>spigotmc.org</a><br><br> 
