@@ -43,7 +43,7 @@ java {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+    if (targetJavaVersion >= 17 || JavaVersion.current().isJava10Compatible()) {
         options.release = targetJavaVersion
     }
 }
@@ -54,13 +54,5 @@ processResources {
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {
         expand props
-    }
-}
-
-tasks.create("copyjar").doLast {
-    delete("C:/Users/l_cav/Test Server/server/plugins/${rootProject}.jar")
-    copy {
-        from("/build/libs/")
-        into("C:/Users/l_cav/Test Server/server/plugins")
     }
 }

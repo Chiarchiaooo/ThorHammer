@@ -21,15 +21,22 @@ Made for 1.13x -> 1.19x servers
 
 ## Support
 
-To get support open a issue on my <a href=https://github.com/Chiarchiaooo/ThorHammer/issues> GitHub issue page </a> or join my <a href=https://dsc.gg/cliffycommunity>discord</a><br><br>
+There are 3 possible ways to recieve support:
+ * Open a <a href=https://github.com/Chiarchiaooo/ThorHammer/issues> issue </a>
+ * Joining my <a href=https://dsc.gg/cliffycommunity>discord</a> and going on the **help section** after verifying
+ * DM Me to **~Luke#7123** or <a href=https://telegram.me/Ciarcia>**@Ciarcia**</a>
+
 
 ## Features
 
-* **Thor's Wrath**: _ Shift + right click, summon the wrath of Thor in the form of a storm and cast lightnings at all creatures in the area nearby  _
+* **Thor's Wrath**: _Shift + right click (looking up), summon the wrath of Thor in the form of a storm and cast lightnings at all creatures in the area nearby_
 
-* **Shockwawe attack**: _ Jump and slam the hammer to the ground, creating a massive shockwawe (editable in the config), slamming every creature in the nearby radius in the air before strucking them with a lightning_
 
-* **Reloadable/Resettable config file**: _possibility to reload and reset the config without the use of plugman, /reload or manual action_
+* **Shockwawe attack**: _(in air, before touching the ground and looking down) shift + left click ,Jump and slam the hammer to the ground, creating a massive shockwawe (editable in the config), slamming every creature in the nearby radius in the air before strucking them with a lightning_<br>
+
+
+* **Reloadable/Resettable config file**: _possibility to reload and reset the config without the use of plugman, /reload or manual action_ <br>
+
 
 * **Customizability**, _admins can define in the config file, like:_<br>
  \- _Message prefix: (Ex: MCServer >)_<br>
@@ -41,33 +48,31 @@ To get support open a issue on my <a href=https://github.com/Chiarchiaooo/ThorHa
 <br>
 
 ## Commands
-<br>
 
-### Commands
-| Command | Description | Permission | Aliases |
-| --------------- | ---------------- | ---------------- | ---------------- |
-| /mjolnir | Shows plugin info | None | /th |
-| /mjolnir give [\<player\>] | Gives the hammer to the person executing the command or to someone else | thorhammer.give.command | /th give [\<player\>] |
-| /mjolnir help | Shows plugin help msg | thorhammer.help.command | /th help |
-| /mjolnir reload | Reload Plugin configs | thorhammer.reload.command | /th reload |
-| /mjolnir reset \<CONFIRM\> | Resets plugin config file | thorhammer.reset.command | /th reset \<CONFIRM\> |
+| Command                      | Description                                                             | Permission                | Aliases                 |
+|------------------------------|-------------------------------------------------------------------------|---------------------------|-------------------------|
+| /mjolnir                     | Shows plugin info                                                       | None                      | /th                     |
+| /mjolnir give [\<player\>]   | Gives the hammer to the person executing the command or to someone else | thorhammer.give.command   | /th give [\<player\>]   |
+| /mjolnir help                | Shows plugin help msg                                                   | thorhammer.help.command   | /th help                |
+| /mjolnir reload              | Reload Plugin configs                                                   | thorhammer.reload.command | /th reload              |
+| /mjolnir reset \[<CONFIRM\>] | Resets plugin config file                                               | thorhammer.reset.command  | /th reset \[<CONFIRM\>] |
+ | /mjolnir attack \<attack\>   | Forcefully casts an attack                                              | thorhammer.attack.command | /th attack \<attack\>   |
 
 <br><br>
-### Permissions
+## Permissions
 
-| Permission | Description |
-| --------------- | ---------------- |
-| thorhammer.hammer.* | Oh.. Hi Thor, long time no see!
-| thorhammer.give.others | Ability to give other worthy people Mjolnir
-| thorhammer.hammer.lightning | Ability to cast lightning using Mjolnir
-| thorhammer.hammer.hold | Ability to be considered worthy or not
-| thorhammer.hammer.shockwawe | Ability to use shockwawe attack
-| thorhammer.hammer.damage | Ability to hurt beings
-
+| Permission                  | Description                                 |
+|-----------------------------|---------------------------------------------|
+| thorhammer.hammer.*         | Oh.. Hi Thor, long time no see!             |
+| thorhammer.give.others      | Ability to give other worthy people Mjolnir |
+| thorhammer.hammer.lightning | Ability to cast lightning using Mjolnir     |
+| thorhammer.hammer.hold      | Ability to be considered worthy or not      |
+| thorhammer.hammer.shockwawe | Ability to use shockwawe attack             |
+| thorhammer.hammer.damage    | Ability to hurt beings                      |
 
 ## Config File
-| File Name  | Link |
-| ---------- | ---- |
+| File Name  | Link                                                                                 |
+|------------|--------------------------------------------------------------------------------------|
 | config.yml | https://github.com/Chiarchiaooo/ThorHammer/blob/master/src/main/resources/config.yml |
 
 ## Donations

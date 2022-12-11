@@ -8,7 +8,6 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class AnimationUtils implements Runnable {
 
